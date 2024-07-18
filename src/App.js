@@ -1,4 +1,6 @@
 import './App.css';
+import img1 from './images/man_1.png'
+import img2 from './images/man_2.png'
 
 function App() {
   return (
@@ -45,7 +47,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="row"></div>
+        <div className="row r2">
+          <div className="col-lg-6">
+
+          </div>
+          <div className="col-lg-6">
+            <img src={img1} alt="image" />
+          </div>
+        </div>
       </div>
     </>
   );
