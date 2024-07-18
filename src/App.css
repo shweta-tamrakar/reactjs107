@@ -7,15 +7,13 @@ body {
   padding: 20px 100px;
 }
 
+.r1 .r1a {
+  margin-top: -14px;
+}
+
 .r1 .logo {
   font-size: 30px;
   font-weight: 900;
-}
-
-.r1 .r1a {
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
 }
 
 .r1 button {
@@ -70,9 +68,66 @@ body {
   object-position: center;
 }
 
+.r2 .r2a {
+  padding: 100px;
+}
+
+.r2 .txt1 {
+  font-size: 22px;
+  color: #f6b637;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.r2 .txt2 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 80px;
+  margin: 20px 0;
+}
+
+.r2 .txt3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-wrap: nowrap;
+}
+
+.r2 .r2a span {
+  color: #f6b637;
+}
+
+.r2 button {
+  background-color: #f6b637;
+  padding: 20px 30px;
+  margin-right: 10px;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.r2 button:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 30px;
+  margin-right: 20px;
+  border-radius: 100px;
+  font-weight: 700;
+  border: 1px solid #fff;
+}
+
 @media (max-width:720px) {
   .r1 {
     padding: 20px 30px;
+  }
+
+  .r2 .r2a {
+    padding: 10px;
+  }
+
+  .r2 .r2a .txt3 {
+    padding: 10px;
+    text-wrap: wrap;
   }
 
 

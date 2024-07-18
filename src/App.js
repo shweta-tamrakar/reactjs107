@@ -49,7 +49,22 @@ function App() {
         </div>
         <div className="row r2">
           <div className="col-lg-6">
+            <div className="r2a">
+              <div className="txt1">
+                HELLO!
+              </div>
+              <div className="txt2">
+                I'm <span>SHWETA TAMRAKAR</span>
+              </div>
 
+              <div className="txt3">
+                A FREELANCE WEB DEVELOPER
+              </div>
+              <div>
+                <button>HIRE ME</button>
+                <button>MY WORKS</button>
+              </div>
+            </div>
           </div>
           <div className="col-lg-6">
             <img src={img1} alt="image" />
