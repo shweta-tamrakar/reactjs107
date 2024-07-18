@@ -116,6 +116,20 @@ body {
   border: 1px solid #fff;
 }
 
+.r2b {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -120px;
+}
+
+
+.r2 .r2b button {
+  padding: 10px;
+}
+
+
 @media (max-width:720px) {
   .r1 {
     padding: 20px 30px;

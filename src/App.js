@@ -1,8 +1,16 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import img1 from './images/man_1.png'
 import img2 from './images/man_2.png'
 
+
+let arr = [
+  ['SHWETA TAMRAKAR', 'A FREELANCE WEB DEVELOPER', img1],
+  ['JOHN THOMSON', 'A FREELANCE WEB DEVELOPER', img2]
+]
 function App() {
+  const [active, setactive] = useState(true)
+
   return (
     <>
       <div className="container-fluid">
@@ -46,6 +54,7 @@ function App() {
               </button>
             </div>
           </div>
+
         </div>
         <div className="row r2">
           <div className="col-lg-6">
@@ -54,11 +63,11 @@ function App() {
                 HELLO!
               </div>
               <div className="txt2">
-                I'm <span>SHWETA TAMRAKAR</span>
+                I'm <span>{active ? arr[0][0] : arr[1][0]}</span>
               </div>
 
               <div className="txt3">
-                A FREELANCE WEB DEVELOPER
+                {active ? arr[0][1] : arr[1][1]}
               </div>
               <div>
                 <button>HIRE ME</button>
@@ -67,7 +76,17 @@ function App() {
             </div>
           </div>
           <div className="col-lg-6">
-            <img src={img1} alt="image" />
+            <img src={active ? arr[0][2] : arr[1][2]} alt="image" />
+          </div>
+          <div className="r2b">
+            <div className="mybtn">
+              <button onClick={() => {
+                setactive(true)
+              }}>O</button>
+              <button onClick={() => {
+                setactive(false)
+              }}>O</button>
+            </div>
           </div>
         </div>
       </div>
