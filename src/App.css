@@ -2,3 +2,72 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+.r1 {
+  padding: 20px 100px;
+}
+
+.r1 .logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.r1 .r1a {
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.r1 button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 7px 0;
+  transition: all .3s ease;
+}
+
+.r1 .active {
+  color: #f6b637;
+  font-weight: 700;
+}
+
+.r1 .active .line {
+  width: 100%;
+  background: #f6b637;
+  height: 1px;
+  margin-top: 5px;
+}
+
+.r1 .line {
+  background: transparent;
+  height: 1px;
+  margin-top: 5px;
+  width: 0;
+  transition: all .3s ease;
+}
+
+.r1 button:hover {
+  color: #f6b637;
+}
+
+.r1 button:hover .line {
+  background: #f6b637;
+  width: 100%;
+}
+
+.r1 button {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+@media (max-width:720px) {
+  .r1 .r1a {
+    /* flex-direction: column;
+    align-items: start; */
+  }
+
+
+}
